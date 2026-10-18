@@ -1,0 +1,25 @@
+:root{--bg:#f5f6fa;--ink:#16213b;--muted:#5a6580;--orbit:#2a56c6;--hot:#d98a1f;--card:#fff;--line:#d9ddea;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1424;--ink:#e6eaf5;--muted:#9aa6c4;--orbit:#7ea2ff;--hot:#f0b055;--card:#161e34;--line:#2a3555;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Naskh Arabic",Tahoma,serif;font-size:1.1rem;line-height:1.9}
+main{max-width:52rem;margin:0 auto;padding:1.5rem 1rem 3rem}
+h1{font-family:"Reem Kufi",Tahoma,sans-serif;font-size:clamp(1.5rem,4vw,2.1rem);margin:0 0 .8rem;line-height:1.5}
+canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:8px;border:1px solid var(--line);background:#0a1124}
+.hud{display:grid;grid-template-columns:1fr;gap:.8rem;margin:1rem 0}
+.info{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem}
+.info h2{font-family:"Reem Kufi",sans-serif;font-size:1.3rem;margin:0;color:var(--orbit)}
+.info p{margin:.2rem 0 0}
+#st{color:var(--hot);font-weight:700;min-height:1.9em}
+.reads{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+.reads div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.5rem .7rem;text-align:center}
+.reads small{display:block;color:var(--muted);font-size:.9rem}
+.reads b{font-family:"Reem Kufi",sans-serif;font-size:1.25rem;direction:ltr;unicode-bidi:plaintext}
+.ctl{display:flex;gap:.8rem;align-items:center}
+.ctl input{flex:1;accent-color:var(--hot)}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:.35rem .9rem}
+button:hover{border-color:var(--orbit)}
+#play{background:var(--hot);color:#1a1205;border-color:var(--hot);font-weight:700;min-width:6.5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
+.chips button[aria-pressed=true]{background:var(--orbit);color:#fff;border-color:var(--orbit)}
+:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
+.note{color:var(--muted);font-size:.9rem;margin-top:1.2rem}

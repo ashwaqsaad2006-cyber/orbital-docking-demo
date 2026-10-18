@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>من الإطلاق إلى الالتحام | ذرة فهم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>من الإطلاق إلى الالتحام: مركبة تلتقي بالمحطة</h1>
+<canvas id="cv" role="img" aria-label="محاكاة لمركبة تنطلق من الأرض وتلتقي بمحطة فضائية وتلتحم بها"></canvas>
+<div class="hud">
+<div class="info" aria-live="polite"><h2 id="sn"></h2><p id="sd"></p><p id="st"></p></div>
+<div class="reads">
+<div><small>الارتفاع</small><b id="v1">0</b></div>
+<div><small id="l2">فرق الطور</small><b id="v2"></b></div>
+<div><small>السرعة النسبية</small><b id="v3"></b></div>
+</div>
+</div>
+<div class="ctl"><button id="play">تشغيل</button><input id="sl" type="range" min="0" max="1000" value="0" aria-label="موضع المحاكاة"></div>
+<div class="chips" id="chips"></div>
+<p class="note">الرسم توضيحي وغير مقيّس، والأرقام تقريبية لأغراض الشرح. في مشهد الاقتراب القريب تُستخدم مقياس لوغاريتمي للمسافة ليظهر التباطؤ بوضوح.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
